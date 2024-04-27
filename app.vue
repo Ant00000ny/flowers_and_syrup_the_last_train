@@ -16,12 +16,20 @@
         </div>
     </div>
     <div class="fixed top-0 right-0 z-50 transition-all translate-x-[93%] hover:translate-x-0">
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=1&id=3190774&auto=1&height=430"></iframe>
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="https://music.163.com/outchain/player?type=1&id=3190774&auto=1&height=430"></iframe>
     </div>
 </template>
 
 <script setup>
 import anime from "animejs";
+
+useHead({
+    title: "花と水飴、最終電車",
+    meta: [
+        { name: "description", content: "花と水飴、最終電車" },
+        { name: "keywords", content: "花と水飴、最終電車" }
+    ]
+});
 
 let images = ref(null);
 
